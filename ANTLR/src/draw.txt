@@ -1,0 +1,50 @@
+// this is comment
+COLOR IS BLUE;
+rot IS 0;
+/*
+var h_scale=-10*-4;
+var v_scale=h_scale;
+
+SCALE IS(h_scale,v_scale);
+var y=200;
+var x;
+x = y = 200;
+ORIGIN IS (20, y);
+*/
+--pixsize is 10;
+--zonesize is (800, 600);
+
+FOR T FROM 0 TO 2*PI+PI/50 STEP PI/50 DRAW(T, sin(T));
+--y = y + 40;
+--ORIGIN IS (20, y); //240);
+FOR T FROM 0 TO 2*PI+PI/50 STEP PI/50 DRAW(T, sin(T));
+--y = y + 40;
+--ORIGIN IS (20, y); //280);
+FOR T FROM 0 TO 2*PI+PI/50 STEP PI/50 DRAW(T, sin(T));
+
+ORIGIN IS (380,240);
+SCALE IS(80,80/3);
+ROT IS PI/2+0*PI/3;
+COLOR is black;
+FOR T FROM -PI TO PI STEP PI/50 DRAW (cos(T), sin(T));
+ROT IS PI/2+2*PI/3;
+FOR T FROM -PI TO PI STEP PI/50 DRAW (cos(T), sin(T));
+ROT IS PI/2-2*PI/3;
+FOR T FROM -PI TO PI STEP PI/50 DRAW (cos(T), sin(T));
+
+/*
+	this is comment too.
+*/
+--- this is comment too.
+
+////ORIGIN IS(580,240);
+////SCALE IS (80,80);
+ORIGIN IS(500,500);
+SCALE IS (300,300);
+ROT IS 0;
+color is red;
+FOR T FROM 0 TO 2*PI STEP PI/50 DRAW(cos(T), sin(T));
+FOR T FROM 0 TO PI*20 STEP PI/50 
+DRAW((1-1/(10/7))*cos(T)+1/(10/7)*cos(-T*((10/7)-1)), (1-1/(10/7))*sin(T)+1/(10/7)*sin(-T*(10/7-1)));
+
+
