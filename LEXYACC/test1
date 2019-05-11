@@ -1,0 +1,8 @@
+--------------- 函数f(t)=t的图形					
+/******   abcdef *****/
+rot is pi/6;								-- 设置旋转角度
+origin is (200, 300);	
+scale is (2*3 * (6*5+4) / 34, 1);							-- 设置横坐标和纵坐标的比例
+/*****/
+for T from 0 to 2*pi step 1 draw (t, 0);		-- 横坐标的轨迹
+This is error token
